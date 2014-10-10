@@ -1,0 +1,11 @@
+{
+  "name": "ember-nw-app",
+  "description": "Test application with node-webkit and ember-cli",
+  "main": "app://localhost/index.html",
+  "window": {
+    "title": "Emberjs node-webkit app",
+    "toolbar": true,
+    "frame": "true"
+  },
+  "version": "0.0.1"
+}

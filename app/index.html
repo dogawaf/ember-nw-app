@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NwApp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+        var gui = window.gui = require('nw.gui');
+
+        // leave the require namespace to ember
+        window.node_require = window.require;
+        delete window.require;
+    </script>
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-nw-app.css">
+  </head>
+  <body>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-nw-app.js"></script>
+  </body>
+</html>
